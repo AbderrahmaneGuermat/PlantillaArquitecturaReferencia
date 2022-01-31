@@ -9,7 +9,7 @@
 	    <relativePath>../parent</relativePath>
 	</parent>
 	
-	<groupId>${{values.component_id | dump}}</groupId>
+	<groupId>${{values.component_id}}</groupId>
 	<artifactId>library-pom</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0.0</version>

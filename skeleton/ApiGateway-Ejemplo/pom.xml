@@ -4,13 +4,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
     <parent>
-    	<groupId>${{values.component_id | dump}}</groupId>
+    	<groupId>${{values.component_id}}</groupId>
 		<artifactId>reactive-microservicio-pom</artifactId>
 		<version>1.0.0</version>
 		<relativePath>../parent-poms/microservice/reactive</relativePath>
 	</parent>
 
-	<groupId>${{values.component_id | dump}}</groupId>
+	<groupId>${{values.component_id}}</groupId>
 	<artifactId>ApiGateway-Ejemplo</artifactId>
 	<version>${apigatewayejemplo.version}</version>
 

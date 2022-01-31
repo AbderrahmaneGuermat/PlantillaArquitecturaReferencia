@@ -4,13 +4,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <artifactId>library-pom</artifactId>
-    <groupId>${{values.component_id | dump}}</groupId>
+    <groupId>${{values.component_id}}</groupId>
     <version>1.0.0</version>
     <relativePath>../parent-poms/lib</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>${{values.component_id | dump}}s.utilities</groupId>
+  <groupId>${{values.component_id}}s.utilities</groupId>
   <artifactId>common-utilities</artifactId>
   <version>${common-utilities.version}</version>
 
