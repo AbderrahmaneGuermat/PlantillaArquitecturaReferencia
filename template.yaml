@@ -25,7 +25,7 @@ spec:
           description: Identificador del proyecto ej. (com.miproyecto)
         artifact_id:
           title: Artifact ID
-          type: string
+          type: Symbol
           description: Identificador del artefacto del proyecto ej. (MiProyecto)
         description:
           title: Description
