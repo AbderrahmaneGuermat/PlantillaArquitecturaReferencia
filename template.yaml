@@ -1,9 +1,9 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: Arquitectura de referencia
-  title: Proyecto en base a la arquitectura de referencia
-  description: Crear un proyecto en base a la arquitectura de referencia
+  name: Plantilla-Arq-Referencia
+  title: Plantilla de la arquitectura de Referencia
+  description: base de referencia
   tags:
     - recommended
     - java
@@ -12,33 +12,29 @@ spec:
   type: service
 
   parameters:
-    - title: Provide some simple information
+    - title: Rellena información básica
       required:
         - component_id
+        - artifact_id
         - owner
-        - java_package_name
       properties:
         component_id:
           title: Name
           type: string
-          description: Unique name of the component
-        java_package_name:
-          title: Java Package Name
+          description: Identificador del proyecto ej. (com.miproyecto)
+        artifact_id:
+          title: Name
           type: string
-          description: Name for the java package. eg (io.backstage.blah)
-        description:
-          title: Description
-          type: string
-          description: Help others understand what this website is for.
+          description: Identificador del artefacto del proyecto ej. (MiProyecto)
         owner:
           title: Owner
           type: string
-          description: Owner of the component
+          description: Creador del componente
           ui:field: OwnerPicker
           ui:options:
             allowedKinds:
               - Group
-    - title: Choose a location
+    - title: Elige dirección GitHub
       required:
         - repoUrl
       properties:
@@ -59,10 +55,9 @@ spec:
         copyWithoutRender:
           - .github/workflows/*
         values:
-          component_id: ${{ parameters.component_id }}
           description: ${{ parameters.description }}
-          artifact_id: ${{ parameters.component_id }}
-          java_package_name: ${{ parameters.java_package_name }}
+          component_id: ${{ parameters.component_id }}
+          artifact_id: ${{ parameters.artifact_id }}
           owner: ${{ parameters.owner }}
           destination: ${{ parameters.repoUrl | parseRepoUrl }}
           http_port: 8080
