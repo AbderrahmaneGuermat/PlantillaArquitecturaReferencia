@@ -4,13 +4,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
     <parent>
-    	<groupId>com.microservicios</groupId>
+    	<groupId>${{values.component_id | dump}}</groupId>
 		<artifactId>imperative-microservicio-pom</artifactId>
 		<version>1.0.0</version>
 		<relativePath>../parent-poms/microservice/imperative</relativePath>
 	</parent>
 
-	<groupId>com.microservicios</groupId>
+	<groupId>${{values.component_id | dump}}</groupId>
 	<artifactId>Servicio-Ejemplo</artifactId>
 	<version>${servicioejemplo.version}</version>
 

@@ -3,7 +3,7 @@ kind: Template
 metadata:
   name: Plantilla-Arq-Referencia
   title: Plantilla de la arquitectura de Referencia
-  description: base de referencia
+  description: Crea tu proyecto en base a la arquitectura de referencia
   tags:
     - recommended
     - java
@@ -16,14 +16,15 @@ spec:
       required:
         - component_id
         - artifact_id
+        - description
         - owner
       properties:
         component_id:
-          title: Name
+          title: Project ID
           type: string
           description: Identificador del proyecto ej. (com.miproyecto)
         artifact_id:
-          title: Name
+          title: Artifact ID
           type: string
           description: Identificador del artefacto del proyecto ej. (MiProyecto)
         description:

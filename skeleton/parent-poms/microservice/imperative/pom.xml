@@ -4,13 +4,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.microservicios</groupId>
+    <groupId>${{values.component_id | dump}}</groupId>
     <artifactId>microservicio-pom</artifactId>
     <version>1.0.0</version>
     <relativePath>../common</relativePath>
   </parent>
 
-  <groupId>com.microservicios</groupId>
+  <groupId>${{values.component_id | dump}}</groupId>
   <artifactId>imperative-microservicio-pom</artifactId>
   <packaging>pom</packaging>
   <version>1.0.0</version>
@@ -21,12 +21,12 @@
   <dependencies>
 
     <dependency>
-      <groupId>com.microservicios.utilities</groupId>
+      <groupId>${{values.component_id | dump}}.utilities</groupId>
       <artifactId>common-utilities</artifactId>
       <version>${common-utilities.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.microservicios.interfaces</groupId>
+      <groupId>${{values.component_id | dump}}.interfaces</groupId>
       <artifactId>common-interfaces</artifactId>
       <version>${common-interfaces.version}</version>
     </dependency>
