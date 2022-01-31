@@ -29,7 +29,7 @@ spec:
         owner:
           title: Owner
           type: string
-          description: Creador del componente
+          description: Creador del proyecto
           ui:field: OwnerPicker
           ui:options:
             allowedKinds:
@@ -67,7 +67,7 @@ spec:
       action: publish:github
       input:
         allowedHosts: ["github.com"]
-        description: This is ${{ parameters.component_id }}
+        description: This is ${{ parameters.group_id }}
         repoUrl: ${{ parameters.repoUrl }}
 
     - id: register
