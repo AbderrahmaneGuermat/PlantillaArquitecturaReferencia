@@ -26,6 +26,10 @@ spec:
           title: Name
           type: string
           description: Identificador del artefacto del proyecto ej. (MiProyecto)
+        description:
+          title: Description
+          type: string
+          description: Ayuda a otros saber de que va el proyecto
         owner:
           title: Owner
           type: string
