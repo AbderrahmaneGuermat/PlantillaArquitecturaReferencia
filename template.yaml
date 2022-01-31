@@ -1,9 +1,9 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: springboot-template-copia
-  title: Spring Boot gRPC Service Copia
-  description: Create a simple microservice using gRPC and Spring Boot Java
+  name: Arquitectura de referencia
+  title: Proyecto en base a la arquitectura de referencia
+  description: Crear un proyecto en base a la arquitectura de referencia
   tags:
     - recommended
     - java
